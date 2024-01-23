@@ -23,3 +23,16 @@ def get_user_input(prompt):
     except ValueError:
         print("Please enter a number.")
         return get_user_input(prompt)
+
+
+# Main code for the game board
+def main():
+    board_size = 5
+    board = [["O"] * board_size for _ in range(board_size)]
+
+    ship_row = random_row(board)
+    ship_col = random_col(board)
+
+    print("Welcome to my Battleship Game - Good Luck!")
+    print_board(board)
+
