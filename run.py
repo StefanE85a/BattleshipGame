@@ -46,3 +46,25 @@ def main():
         if guess_row == ship_row and guess_col == ship_col:
             print("NoooOOOOoo! You sunk my battleship :D")
             break
+
+
+# If not hitting my battleship
+        else:
+
+            row_out_of_bounds = guess_row < 0 or guess_row >= board_size
+            col_out_of_bounds = guess_col < 0 or guess_col >= board_size
+
+    if row_out_of_bounds or col_out_of_bounds:
+        print("Oops that is not even close.")
+
+
+# If selecting same target/row and column on the board
+    elif board[guess_row][guess_col] == "X":
+        print("You have guessed that one already.")
+
+# If missing my battleship
+    else:
+        print("HaHa You missed my battleship!")
+        board[guess_row][guess_col] = "X"
+
+        print_board(board)
