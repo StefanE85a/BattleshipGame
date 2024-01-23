@@ -1,32 +1,25 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Python Battleship Game
 
-Welcome,
+Welcome to the Python Battleship Game! This is a simple, text-based version of the classic game Battleship.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+## Description
 
-## Reminders
+The game is played on a 5x5 grid where a single battleship is randomly placed. The player has 4 turns to guess the location of the battleship. Each guess consists of specifying a row and a column on the grid. If you guess correctly, you sink the battleship; if not, you're given a hint and allowed to guess again until you either sink the battleship or run out of turns.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Features
 
-## Creating the Heroku app
+- Text-based Battleship game
+- Randomized placement of the battleship
+- Player input for guessing the battleship's location
+- Feedback on each guess, including hits, misses, and repeated guesses
+- Limit of 4 turns to find the battleship
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## How to Play
 
-1. `heroku/python`
-2. `heroku/nodejs`
+1. **Guess the Location**: When prompted, enter the row and column numbers where you think the battleship is located. The grid is 5x5, so valid numbers are from 0 to 4.
+2. **Feedback**: After each guess, the game will inform you if you've hit or missed the battleship. If you guess a location you've already tried, the game will let you know.
+3. **Winning and Losing**: Sink the battleship within 4 turns to win. If you fail to do so after 4 turns, the game is over.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+## Errors on the way
+- blank, white lines
+- indented blocks
