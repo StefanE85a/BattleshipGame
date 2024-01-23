@@ -36,3 +36,13 @@ def main():
     print("Welcome to my Battleship Game - Good Luck!")
     print_board(board)
 
+
+# Guess row and column of my battleship
+    for turn in range(4):
+        print(f"Turn {turn + 1} of 4")
+        guess_row = get_user_input("Guess Row: ")
+        guess_col = get_user_input("Guess Col: ")
+
+        if guess_row == ship_row and guess_col == ship_col:
+            print("NoooOOOOoo! You sunk my battleship :D")
+            break
