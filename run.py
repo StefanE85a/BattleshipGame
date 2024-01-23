@@ -68,3 +68,13 @@ def main():
         board[guess_row][guess_col] = "X"
 
         print_board(board)
+
+
+# How many rounds the game have
+        if turn == 3:
+            print("Game Over")
+
+
+# Run the main function when the game is executed
+if __name__ == "__main__":
+    main()
